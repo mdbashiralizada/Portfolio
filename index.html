@@ -241,84 +241,103 @@ h1 {
 /* PROFILE PHOTO AND FLOATING CARDS */
 
 .portrait-wrap {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
-  min-height:430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 430px;
 }
 
 .portrait {
-  width:min(320px,85%);
-  aspect-ratio:4/5;
-  object-fit:cover;
-  border-radius:28px;
-  border:3px solid var(--accent);
-  box-shadow:0 20px 60px rgba(70,130,255,.25);
-  position:relative;
-  z-index:2;
+  width: min(320px, 85%);
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 3px solid var(--accent);
+  box-shadow: 0 20px 60px rgba(70,130,255,.25);
+  position: relative;
+  z-index: 2;
 }
 
 .portrait-frame {
-  position:absolute;
-  width:78%;
-  height:88%;
-  border:2px solid var(--accent2);
-  border-radius:30px;
-  transform:rotate(8deg);
-  opacity:.65;
+  position: absolute;
+  width: 78%;
+  height: 88%;
+  border: 2px solid var(--accent2);
+  border-radius: 30px;
+  transform: rotate(8deg);
+  opacity: .65;
 }
+
+/* SMALL TRANSPARENT FLOATING CARDS */
 
 .float-card {
-  position:absolute;
-  z-index:4;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:13px 16px;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
 
-  background:rgba(255, 255, 255, 0.72);
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
+  background: rgba(255,255,255,0.58);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 
-  border:1px solid rgba(255, 255, 255, 0.85);
-  border-radius:14px;
-  box-shadow:0 8px 25px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255,255,255,0.75);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
 
-  color:#172033;
-  animation:float 4s ease-in-out infinite;
+  color: #172033;
+  animation: float 4s ease-in-out infinite;
 }
+
+/* TOP RIGHT CARD */
 
 .float-one {
-  top:45px;
-  right:-15px;
+  top: 25px;
+  right: 0;
 }
+
+/* BOTTOM LEFT CARD */
 
 .float-two {
-  bottom:45px;
-  left:-25px;
-  animation-delay:1.5s;
+  bottom: 25px;
+  left: 0;
+  animation-delay: 1.5s;
 }
+
+/* ICON SIZE */
 
 .float-icon {
-  font-size:25px;
+  font-size: 17px;
 }
+
+/* CARD TITLE */
 
 .float-card strong {
-  display:block;
-  font-size:.78rem;
-  color:#172033;
+  display: block;
+  font-size: .65rem;
+  color: #172033;
 }
+
+/* CARD SUBTITLE */
 
 .float-card small {
-  display:block;
-  color:#475569;
-  font-size:.67rem;
+  display: block;
+  color: #475569;
+  font-size: .55rem;
 }
 
+/* FLOATING ANIMATION */
+
 @keyframes float {
-  0%,100% {transform:translateY(0)}
-  50% {transform:translateY(-13px)}
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
 }
 
 /* GENERAL SECTIONS */
