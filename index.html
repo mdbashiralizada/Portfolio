@@ -276,10 +276,16 @@ h1 {
   align-items:center;
   gap:10px;
   padding:13px 16px;
-  border:1px solid var(--border);
-  background:var(--surface);
+
+  background:rgba(255, 255, 255, 0.72);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+
+  border:1px solid rgba(255, 255, 255, 0.85);
   border-radius:14px;
-  box-shadow:var(--shadow);
+  box-shadow:0 8px 25px rgba(0, 0, 0, 0.12);
+
+  color:#172033;
   animation:float 4s ease-in-out infinite;
 }
 
@@ -301,11 +307,12 @@ h1 {
 .float-card strong {
   display:block;
   font-size:.78rem;
+  color:#172033;
 }
 
 .float-card small {
   display:block;
-  color:var(--muted);
+  color:#475569;
   font-size:.67rem;
 }
 
