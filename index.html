@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1220">
+<meta name="description" content="Muhammad Bashir Alizada — Computer Science graduate specializing in Information Systems, web development, database management and data reporting.">
+<meta name="author" content="Muhammad Bashir Alizada">
+<title>Muhammad Bashir Alizada | Information Systems & Web Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1220;--bg2:#101b30;--panel:#121e33;--panel2:#172640;--text:#f3f6fc;--muted:#aab8ce;--line:rgba(171,195,229,.17);--blue:#7eafff;--cyan:#65ddd2;--violet:#a995ff;--green:#6cdbad;--shadow:0 20px 60px rgba(0,0,0,.22);--max:1120px}
+[data-theme=light]{--bg:#f4f7fc;--bg2:#eaf0f8;--panel:#fff;--panel2:#f7f9fd;--text:#17243b;--muted:#5a6b85;--line:rgba(42,65,103,.15);--blue:#245fc5;--cyan:#087e86;--violet:#7055cb;--green:#087f62;--shadow:0 18px 50px rgba(33,55,91,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:radial-gradient(ellipse at 12% 5%,rgba(76,130,255,.13),transparent 34rem),radial-gradient(ellipse at 90% 25%,rgba(58,207,194,.08),transparent 30rem),var(--bg);color:var(--text);font:16px/1.7 "DM Sans",sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.progress{position:fixed;z-index:1000;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--violet))}
+header{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font:700 1.1rem "Space Grotesk";letter-spacing:-.05em}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:21px}.navlinks a{font-size:.83rem;color:var(--muted);font-weight:700}.navlinks a:hover{color:var(--cyan)}.navtools{display:flex;gap:8px}.iconbtn,.menu{height:40px;width:40px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);cursor:pointer}.menu{display:none}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px;min-height:660px;padding:78px 0 70px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--panel);padding:7px 12px;border-radius:50px;color:var(--green);font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.dot{height:8px;width:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(108,219,173,.13)}
+h1,h2,h3{font-family:"Space Grotesk";line-height:1.13;letter-spacing:-.045em}h1{font-size:clamp(2.9rem,6.2vw,5.3rem);margin:22px 0 14px}.gradient{background:linear-gradient(100deg,var(--blue),var(--cyan),var(--violet));background-clip:text;-webkit-background-clip:text;color:transparent}.role{font:600 clamp(1.08rem,2vw,1.35rem) "Space Grotesk";color:var(--cyan);min-height:36px;margin:0 0 18px}.cursor{display:inline-block;width:2px;height:1em;background:var(--cyan);vertical-align:-.12em;margin-left:3px;animation:blink .8s steps(2) infinite}@keyframes blink{50%{opacity:0}}.intro{font-size:1.04rem;color:var(--muted);max-width:650px;margin:0 0 25px}.actions{display:flex;gap:11px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:.9rem;transition:.2s}.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(110deg,var(--blue),var(--violet));color:white;border:0;box-shadow:0 10px 26px rgba(90,123,220,.22)}.secondary{background:var(--panel)}.meta-line{display:flex;gap:17px;flex-wrap:wrap;margin-top:27px;color:var(--muted);font-size:.78rem}.meta-line span:before{content:"•";color:var(--cyan);margin-right:7px}
+.visual{min-height:440px;display:grid;place-items:center;position:relative}.orbit{position:absolute;width:min(390px,85vw);aspect-ratio:1;border:1px dashed var(--line);border-radius:50%;animation:spin 38s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;inset:12%;border:1px solid var(--line);border-radius:50%}.orbit:after{inset:25%;border-style:dotted}@keyframes spin{to{transform:rotate(360deg)}}.portrait{position:relative;z-index:2;width:min(285px,68vw);aspect-ratio:.84;padding:8px;border-radius:30px;background:linear-gradient(140deg,var(--cyan),var(--blue),var(--violet));box-shadow:0 25px 75px rgba(60,115,220,.22);transform:rotate(1.5deg)}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 25%;border-radius:23px;display:block;background:var(--panel2)}.orbit-label{position:absolute;bottom:18px;z-index:3;background:var(--panel);border:1px solid var(--line);padding:8px 12px;border-radius:40px;color:var(--muted);font-size:.67rem;letter-spacing:.04em}
+section{padding:78px 0}.section-head{max-width:720px;margin-bottom:30px}.kicker{font-size:.72rem;color:var(--cyan);font-weight:800;letter-spacing:.16em;text-transform:uppercase}.section-head h2{font-size:clamp(2rem,4vw,3.1rem);margin:9px 0 12px}.section-head p{margin:0;color:var(--muted)}.panel,.card,.skillbox{background:var(--panel);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}.aboutgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.panel{padding:27px}.panel p{color:var(--muted);margin:0 0 13px}.panel p:last-child{margin:0}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{padding:19px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}.stat strong{display:block;color:var(--cyan);font:700 1.8rem "Space Grotesk"}.stat span{font-size:.79rem;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{padding:23px;transition:transform .22s,border-color .22s}.card:hover{transform:translateY(-5px);border-color:var(--cyan)}.card-icon{height:43px;width:43px;display:grid;place-items:center;border-radius:13px;background:rgba(101,221,210,.1);color:var(--cyan);font-size:1.2rem;margin-bottom:15px}.card h3{font-size:1.12rem;margin:0 0 9px}.card p{font-size:.88rem;color:var(--muted);margin:0}
+.skillgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skillbox{padding:22px}.skillbox h3{font-size:1.05rem;margin:0 0 13px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:.77rem;font-weight:600;padding:6px 9px;border:1px solid var(--line);border-radius:8px;background:var(--panel2)}
+.project{display:flex;flex-direction:column;min-height:280px}.type{font-size:.68rem;color:var(--green);font-weight:800;letter-spacing:.12em}.project h3{font-size:1.2rem;margin:12px 0}.project p{font-size:.88rem;color:var(--muted);margin:0 0 17px}.project .tags{margin-top:auto}.project .focus{border-top:1px solid var(--line);padding-top:13px;margin-top:14px;color:var(--muted);font-size:.75rem}
+.timeline{border-left:1px solid var(--line);padding-left:24px;margin-left:8px;display:grid;gap:23px}.item{position:relative}.item:before{content:"";position:absolute;left:-30px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px rgba(101,221,210,.12)}.item h3{font-size:1.08rem;margin:0 0 5px}.item .meta{font-size:.82rem;color:var(--cyan);font-weight:700}.item p{margin:5px 0 0;color:var(--muted)}
+.langs{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.lang{padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}.lang b{display:block}.lang span{color:var(--muted);font-size:.78rem}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:30px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(130deg,var(--panel),var(--panel2));box-shadow:var(--shadow)}.contact h2{margin:8px 0 12px}.contact p{color:var(--muted)}.links{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;align-content:center}.contact-link{padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel2);font-size:.84rem;font-weight:700;overflow-wrap:anywhere}.contact-link:hover{border-color:var(--cyan)}.contact-link b{color:var(--cyan);margin-right:8px}
+footer{padding:25px 0;border-top:1px solid var(--line);font-size:.79rem;color:var(--muted)}.footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){.navlinks{gap:12px}.navlinks a{font-size:.75rem}.hero{gap:20px}.grid3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.container{width:calc(100% - 30px)}.nav{height:66px}.menu{display:block}.navlinks{display:none;position:absolute;top:66px;left:15px;right:15px;padding:12px;background:var(--panel2);border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);flex-direction:column;gap:0}.navlinks.open{display:flex}.navlinks a{padding:10px;font-size:.9rem}.hero{grid-template-columns:1fr;text-align:center;padding:45px 0 55px;gap:5px}.visual{grid-row:1;min-height:360px}.portrait{width:220px}.orbit{width:290px}.intro{margin-left:auto;margin-right:auto}.actions,.meta-line{justify-content:center}.aboutgrid,.contact{grid-template-columns:1fr}.grid3,.skillgrid{grid-template-columns:1fr}.langs{grid-template-columns:repeat(2,1fr)}.links{grid-template-columns:1fr}section{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><div class="container nav">
+<a class="brand" href="#home">BASHIR<span>.</span></a>
+<nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#about">Profile</a><a href="#expertise">Expertise</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+<div class="navtools"><button class="iconbtn" id="theme" aria-label="Toggle theme">☼</button><button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button></div>
+</div></header>
+<main>
+<section class="container hero" id="home">
+<div>
+<div class="eyebrow"><span class="dot"></span> Open to employment opportunities</div>
+<h1>Muhammad Bashir <span class="gradient">Alizada</span></h1>
+<p class="role"><span id="typed">Web Developer</span><span class="cursor" aria-hidden="true"></span></p>
+<p class="intro">Computer Science graduate specializing in Information Systems. Interested in web development, database management, data reporting, and technology solutions that help organizations manage information effectively.</p>
+<div class="actions"><a class="btn primary" href="#projects">View Selected Projects ↗</a><a class="btn secondary" href="#contact">Contact Me →</a></div>
+<div class="meta-line"><span>Kabul, Afghanistan</span><span>Nangarhar University</span><span>Graduated 2026</span></div>
+</div>
+<div class="visual"><div class="orbit"></div><div class="portrait"><img src="profile.png" alt="Portrait of Muhammad Bashir Alizada"></div><div class="orbit-label">WEB DEVELOPMENT · DATABASES · INFORMATION SYSTEMS</div></div>
+</section>
+<section id="about"><div class="container">
+<div class="section-head reveal"><div class="kicker">Professional profile</div><h2>Technology grounded in <span class="gradient">real-world needs.</span></h2><p>A Computer Science graduate with an Information Systems foundation and a practical interest in software, data, and organizational workflows.</p></div>
+<div class="aboutgrid"><div class="panel reveal">
+<p>I graduated from Nangarhar University, Faculty of Computer Science, Department of Information Systems. My academic background includes programming, systems analysis, database concepts, and software development.</p>
+<p>My areas of interest include developing web applications, structuring and maintaining databases, organizing records, and preparing useful reports. I approach work through problem analysis, clear documentation, attention to data quality, and continuous learning.</p>
+<p>I am seeking an opportunity to contribute to an organization's IT, information management, database, or software development activities while continuing to grow professionally.</p>
+</div><div class="stats reveal">
+<div class="stat"><strong>2026</strong><span>Computer Science graduation</span></div><div class="stat"><strong>3</strong><span>Featured projects & experience</span></div><div class="stat"><strong>6+</strong><span>Technical and professional areas</span></div><div class="stat"><strong>IS</strong><span>Information Systems specialization</span></div>
+</div></div></div></section>
+<section id="expertise"><div class="container">
+<div class="section-head reveal"><div class="kicker">Core competencies</div><h2>Where I can <span class="gradient">contribute.</span></h2><p>Technical and operational areas relevant to information systems, IT, data, and software roles.</p></div>
+<div class="grid3">
+<article class="card reveal"><div class="card-icon">⌘</div><h3>Web Development</h3><p>Responsive web interfaces and application development using front-end and back-end technologies.</p></article>
+<article class="card reveal"><div class="card-icon">▦</div><h3>Database Management</h3><p>Database design concepts, SQL, structured records, CRUD operations, and information retrieval.</p></article>
+<article class="card reveal"><div class="card-icon">▤</div><h3>Data Management & Reporting</h3><p>Data organization, validation, spreadsheet management, documentation, and report preparation.</p></article>
+<article class="card reveal"><div class="card-icon">◈</div><h3>Information Systems</h3><p>Requirements gathering, workflow understanding, systems analysis, and information organization.</p></article>
+<article class="card reveal"><div class="card-icon">✓</div><h3>Project Coordination</h3><p>Task planning, progress tracking, documentation, coordination, and issue identification.</p></article>
+<article class="card reveal"><div class="card-icon">⚙</div><h3>Software Engineering</h3><p>Programming fundamentals, object-oriented concepts, debugging, testing, and problem solving.</p></article>
+</div></div></section>
+<section id="skills"><div class="container">
+<div class="section-head reveal"><div class="kicker">Technical toolkit</div><h2>Tools & <span class="gradient">technologies.</span></h2><p>Technologies and working areas included in my academic and practical background.</p></div>
+<div class="skillgrid">
+<div class="skillbox reveal"><h3>Web Development</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React.js</span><span class="tag">Tailwind CSS</span><span class="tag">PHP</span><span class="tag">Laravel</span></div></div>
+<div class="skillbox reveal"><h3>Programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">C#</span><span class="tag">Java</span><span class="tag">Object-Oriented Programming</span></div></div>
+<div class="skillbox reveal"><h3>Database & Data</h3><div class="tags"><span class="tag">MySQL</span><span class="tag">SQL</span><span class="tag">Database Design</span><span class="tag">CRUD Operations</span><span class="tag">Data Validation</span><span class="tag">Reporting</span></div></div>
+<div class="skillbox reveal"><h3>Office & Professional</h3><div class="tags"><span class="tag">MS Excel</span><span class="tag">MS Word</span><span class="tag">PowerPoint</span><span class="tag">Documentation</span><span class="tag">Requirements Gathering</span><span class="tag">Project Planning</span><span class="tag">Quality Assurance</span></div></div>
+</div></div></section>
+<section id="projects"><div class="container">
+<div class="section-head reveal"><div class="kicker">Selected projects & experience</div><h2>Evidence of <span class="gradient">applied learning.</span></h2><p>Academic systems and practical experience that demonstrate how I apply technical and organizational knowledge.</p></div>
+<div class="grid3">
+<article class="card project reveal"><div class="type">Academic project · Information system</div><h3>Human Resource Information Management System (HRIMS)</h3><p>Designed and developed an employee information system to organize personnel records, manage staff data, and generate reports for an organizational setting.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div><div class="focus">Focus: employee records · data organization · reporting</div></article>
+<article class="card project reveal"><div class="type">Academic project · Management system</div><h3>Stationery Shop Management System</h3><p>Developed a management-system project focused on organizing stationery inventory and sales information to support daily shop operations.</p><div class="tags"><span class="tag">Database</span><span class="tag">System Analysis</span><span class="tag">Management</span></div><div class="focus">Focus: inventory · sales records · information management</div></article>
+<article class="card project reveal"><div class="type">Business experience</div><h3>HKN Rhinestones</h3><p>Business-owner experience involving daily operations, product activities, coordination, and customer communication.</p><div class="tags"><span class="tag">Operations</span><span class="tag">Coordination</span><span class="tag">Communication</span></div><div class="focus">Role: Business Owner</div></article>
+</div></div></section>
+<section id="education"><div class="container">
+<div class="section-head reveal"><div class="kicker">Education</div><h2>Academic <span class="gradient">background.</span></h2></div>
+<div class="panel reveal"><div class="timeline">
+<div class="item"><h3>Bachelor’s Degree in Computer Science</h3><div class="meta">Nangarhar University · Faculty of Computer Science · Department of Information Systems</div><p>2022 – 2026</p></div>
+<div class="item"><h3>High School Diploma</h3><div class="meta">Balish High School · Urgoon, Paktika, Afghanistan</div><p>2008 – 2021</p></div>
+</div></div></div></section>
+<section id="languages"><div class="container">
+<div class="section-head reveal"><div class="kicker">Communication</div><h2>Languages.</h2><p>Languages I use for communication and learning.</p></div>
+<div class="langs reveal"><div class="lang"><b>Pashto</b><span>Native</span></div><div class="lang"><b>Dari</b><span>Conversational</span></div><div class="lang"><b>English</b><span>Working proficiency</span></div><div class="lang"><b>Urdu</b><span>Conversational</span></div></div>
+</div></section>
+<section id="contact"><div class="container">
+<div class="contact reveal"><div><div class="kicker">Contact</div><h2>Let's discuss how I can contribute.</h2><p>I welcome consideration for relevant opportunities in web development, database management, IT support, data management, and information systems.</p><p>Location: Kabul, Afghanistan</p></div>
+<div class="links"><a class="contact-link" href="mailto:mb.alizada1@gmail.com"><b>✉</b>Email: mb.alizada1@gmail.com</a><a class="contact-link" href="https://wa.me/93776380570" target="_blank" rel="noopener"><b>◉</b>WhatsApp</a><a class="contact-link" href="https://t.me/bashirkhanalizada" target="_blank" rel="noopener"><b>➤</b>Telegram</a><a class="contact-link" href="https://github.com/mdbashiralizada" target="_blank" rel="noopener"><b>⌘</b>GitHub</a></div>
+</div></div></section>
+</main>
+<footer><div class="container footer"><span>© <span id="year"></span> Muhammad Bashir Alizada. All rights reserved.</span><span>Kabul, Afghanistan</span></div></footer>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),root=document.documentElement;
+const theme=$("#theme"),menu=$("#menu"),nav=$("#navlinks"),typed=$("#typed"),reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const saved=localStorage.getItem("bashir-theme");if(saved==="light"||saved==="dark")root.setAttribute("data-theme",saved);
+const icon=()=>theme.textContent=root.getAttribute("data-theme")==="light"?"☾":"☼";icon();
+theme.addEventListener("click",()=>{const next=root.getAttribute("data-theme")==="light"?"dark":"light";root.setAttribute("data-theme",next);localStorage.setItem("bashir-theme",next);icon()});
+menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));menu.textContent=open?"×":"☰"});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");menu.textContent="☰"}));
+if(!reduced){const roles=["Web Developer","Database Specialist","Information Systems Professional","Data & Reporting"];let i=0,n=roles[0].length,del=true;function type(){const word=roles[i];if(del){n--;typed.textContent=word.slice(0,n);if(n<=0){del=false;i=(i+1)%roles.length}}else{n++;typed.textContent=roles[i].slice(0,n);if(n>=roles[i].length){del=true;setTimeout(type,1300);return}}setTimeout(type,del?38:70)}setTimeout(type,1400)}
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+const update=()=>{const max=document.documentElement.scrollHeight-innerHeight;$("#progress").style.width=(max>0?scrollY/max*100:0)+"%"};addEventListener("scroll",update,{passive:true});update();$("#year").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
