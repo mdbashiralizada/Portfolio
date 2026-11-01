@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b1020">
-<meta name="description" content="Muhammad Bashir Alizada — Computer Science graduate, Web Developer, Database and Information Systems professional.">
+<meta name="description" content="Muhammad Bashir Alizada — Computer Science Graduate, Web Developer, Database and Information Systems Professional.">
 <title>Muhammad Bashir Alizada | IT Professional</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,7 @@
   --border:rgba(255,255,255,.10);
   --shadow:0 18px 50px rgba(0,0,0,.22);
 }
+
 body.light {
   --bg:#f5f7fc;
   --surface:#ffffff;
@@ -35,170 +36,699 @@ body.light {
   --border:rgba(20,40,80,.12);
   --shadow:0 18px 45px rgba(30,50,90,.09);
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:85px}
-body{
-  font-family:Inter,Arial,sans-serif;
-  background:var(--bg);color:var(--text);
-  line-height:1.7;transition:background .25s,color .25s;
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
-a{color:inherit;text-decoration:none}
-button{font:inherit}
-.container{width:min(1120px,91%);margin:auto}
-header{
-  position:sticky;top:0;z-index:100;
+
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:85px;
+}
+
+body {
+  font-family:Inter,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  transition:background .25s,color .25s;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+button {
+  font:inherit;
+}
+
+.container {
+  width:min(1120px,91%);
+  margin:auto;
+}
+
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:var(--bg);
   background:color-mix(in srgb,var(--bg) 90%,transparent);
   backdrop-filter:blur(16px);
   border-bottom:1px solid var(--border);
 }
-.nav{
-  min-height:72px;display:flex;align-items:center;
-  justify-content:space-between;gap:20px;
+
+.nav {
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
-.logo{font-weight:800;font-size:1.1rem;letter-spacing:-.5px}
-.logo span{color:var(--accent)}
-.nav-links{display:flex;align-items:center;gap:23px}
-.nav-links a{font-size:.85rem;color:var(--muted);font-weight:600}
-.nav-links a:hover{color:var(--accent)}
-.nav-actions{display:flex;gap:9px;align-items:center}
-.icon-btn{
-  border:1px solid var(--border);background:var(--surface);
-  color:var(--text);border-radius:10px;padding:9px 12px;cursor:pointer;
+
+.logo {
+  font-weight:800;
+  font-size:1.1rem;
+  letter-spacing:-.5px;
 }
-.menu-btn{display:none}
-.hero{padding:95px 0 75px;overflow:hidden}
-.hero-grid{
-  display:grid;grid-template-columns:1.25fr .75fr;
-  gap:55px;align-items:center;
+
+.logo span {
+  color:var(--accent);
 }
-.eyebrow{
-  display:inline-flex;align-items:center;gap:9px;
-  color:var(--accent);font-weight:700;font-size:.82rem;
-  letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;
+
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:23px;
 }
-.dot{width:8px;height:8px;border-radius:50%;background:#36cf91}
-h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.1;letter-spacing:-2.5px;margin-bottom:17px}
-.gradient{
+
+.nav-links a {
+  font-size:.85rem;
+  color:var(--muted);
+  font-weight:600;
+}
+
+.nav-links a:hover {
+  color:var(--accent);
+}
+
+.nav-actions {
+  display:flex;
+  gap:9px;
+  align-items:center;
+}
+
+.icon-btn {
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);
+  border-radius:10px;
+  padding:9px 12px;
+  cursor:pointer;
+}
+
+.menu-btn {
+  display:none;
+}
+
+/* HERO */
+
+.hero {
+  padding:95px 0 75px;
+  overflow:hidden;
+}
+
+.hero-grid {
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:55px;
+  align-items:center;
+}
+
+.eyebrow {
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:var(--accent);
+  font-weight:700;
+  font-size:.82rem;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+
+.dot {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#36cf91;
+}
+
+h1 {
+  font-size:clamp(2.6rem,6vw,4.6rem);
+  line-height:1.1;
+  letter-spacing:-2.5px;
+  margin-bottom:17px;
+}
+
+.gradient {
   background:linear-gradient(100deg,var(--accent),var(--accent2));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
 }
-.role{font-size:clamp(1.1rem,2.5vw,1.5rem);font-weight:700;margin-bottom:17px;min-height:42px}
-.hero-description{color:var(--muted);max-width:650px;font-size:1rem;margin-bottom:25px}
-.hero-meta{display:flex;flex-wrap:wrap;gap:17px;color:var(--muted);font-size:.88rem;margin-bottom:28px}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{
-  display:inline-flex;justify-content:center;align-items:center;gap:8px;
-  padding:12px 19px;border-radius:11px;font-size:.88rem;
-  font-weight:700;border:1px solid var(--border);transition:.2s;
+
+.role {
+  font-size:clamp(1.1rem,2.5vw,1.5rem);
+  font-weight:700;
+  margin-bottom:17px;
+  min-height:42px;
 }
-.btn:hover{transform:translateY(-3px)}
-.btn.primary{background:linear-gradient(110deg,var(--accent),var(--accent2));color:white;border:0}
-.btn.secondary{background:var(--surface);color:var(--text)}
-.portrait-wrap{display:flex;justify-content:center;position:relative}
-.portrait{
-  width:min(340px,100%);aspect-ratio:4/5;object-fit:cover;
-  border-radius:28px;border:1px solid var(--border);
-  box-shadow:var(--shadow);position:relative;z-index:1;
+
+.hero-description {
+  color:var(--muted);
+  max-width:650px;
+  font-size:1rem;
+  margin-bottom:25px;
 }
-.portrait-frame{
-  position:absolute;width:90%;height:90%;border:1px solid var(--accent);
-  border-radius:28px;transform:rotate(6deg);opacity:.35;
+
+.hero-meta {
+  display:flex;
+  flex-wrap:wrap;
+  gap:17px;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:28px;
 }
-section{padding:78px 0}
-.section-head{margin-bottom:35px;max-width:720px}
-.kicker{color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:9px}
-h2{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.2;letter-spacing:-1px;margin-bottom:12px}
-.section-head p,.muted{color:var(--muted)}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:18px;padding:24px;box-shadow:var(--shadow);
+
+.actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
 }
-.card h3{font-size:1.12rem;margin-bottom:10px}
-.card p{color:var(--muted);font-size:.91rem}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}
-.tag{
-  padding:6px 10px;border-radius:8px;background:var(--surface2);
-  color:var(--accent);font-size:.75rem;font-weight:700;
+
+.btn {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  padding:12px 19px;
+  border-radius:11px;
+  font-size:.88rem;
+  font-weight:700;
+  border:1px solid var(--border);
+  transition:.2s;
+  cursor:pointer;
 }
-.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
-.skill-group h3{margin-bottom:12px}
-.skill-list{display:flex;flex-wrap:wrap;gap:9px}
-.skill{
-  background:var(--surface2);padding:8px 12px;border-radius:9px;
-  font-size:.82rem;color:var(--text);border:1px solid var(--border);
+
+.btn:hover {
+  transform:translateY(-3px);
 }
-.project{display:flex;flex-direction:column}
-.project .type{font-size:.75rem;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
-.project .focus{font-size:.82rem;color:var(--muted);margin-top:15px}
-.gallery{
-  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:10px;margin-top:20px;
+
+.btn.primary {
+  background:linear-gradient(110deg,var(--accent),var(--accent2));
+  color:white;
+  border:0;
 }
-.gallery a{
-  display:block;overflow:hidden;border:1px solid var(--border);
-  border-radius:10px;aspect-ratio:16/10;background:var(--surface2);
+
+.btn.secondary {
+  background:var(--surface);
+  color:var(--text);
 }
-.gallery img{
-  width:100%;height:100%;object-fit:cover;display:block;
-  transition:transform .3s ease;
+
+/* PROFILE PHOTO AND FLOATING CARDS */
+
+.portrait-wrap {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  min-height:430px;
 }
-.gallery a:hover img{transform:scale(1.06)}
-.gallery-note{font-size:.72rem;color:var(--muted);margin-top:9px}
-.timeline{border-left:2px solid var(--border);padding-left:22px;margin-left:7px}
-.timeline-item{position:relative;margin-bottom:25px}
-.timeline-item:before{
-  content:"";position:absolute;left:-29px;top:8px;
-  width:11px;height:11px;border-radius:50%;background:var(--accent);
+
+.portrait {
+  width:min(320px,85%);
+  aspect-ratio:4/5;
+  object-fit:cover;
+  border-radius:28px;
+  border:3px solid var(--accent);
+  box-shadow:0 20px 60px rgba(70,130,255,.25);
+  position:relative;
+  z-index:2;
 }
-.timeline-item h3{font-size:1.05rem}
-.timeline-item p{color:var(--muted);font-size:.88rem}
-.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
-.contact-item{
-  background:var(--surface);border:1px solid var(--border);
-  padding:17px;border-radius:13px;
+
+.portrait-frame {
+  position:absolute;
+  width:78%;
+  height:88%;
+  border:2px solid var(--accent2);
+  border-radius:30px;
+  transform:rotate(8deg);
+  opacity:.65;
 }
-.contact-item small{display:block;color:var(--muted);margin-bottom:4px}
-.contact-item a{font-weight:600;overflow-wrap:anywhere}
-.contact-item a:hover{color:var(--accent)}
-footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;text-align:center}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
-.reveal.visible{opacity:1;transform:translateY(0)}
-.progress{position:fixed;top:0;left:0;height:3px;background:var(--accent);z-index:200;width:0}
-@media(max-width:850px){
-  .hero-grid{grid-template-columns:1fr .7fr;gap:25px}
-  .grid3{grid-template-columns:repeat(2,1fr)}
-  .nav-links{gap:13px}
+
+.float-card {
+  position:absolute;
+  z-index:4;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:13px 16px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  border-radius:14px;
+  box-shadow:var(--shadow);
+  animation:float 4s ease-in-out infinite;
 }
-@media(max-width:650px){
-  .menu-btn{display:inline-block}
-  .nav-links{
-    display:none;position:absolute;top:72px;left:0;right:0;
-    background:var(--surface);padding:20px 5%;
-    border-bottom:1px solid var(--border);
-    flex-direction:column;align-items:flex-start;
+
+.float-one {
+  top:45px;
+  right:-15px;
+}
+
+.float-two {
+  bottom:45px;
+  left:-25px;
+  animation-delay:1.5s;
+}
+
+.float-icon {
+  font-size:25px;
+}
+
+.float-card strong {
+  display:block;
+  font-size:.78rem;
+}
+
+.float-card small {
+  display:block;
+  color:var(--muted);
+  font-size:.67rem;
+}
+
+@keyframes float {
+  0%,100% {transform:translateY(0)}
+  50% {transform:translateY(-13px)}
+}
+
+/* GENERAL SECTIONS */
+
+section {
+  padding:78px 0;
+}
+
+.section-head {
+  margin-bottom:35px;
+  max-width:720px;
+}
+
+.kicker {
+  color:var(--accent);
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+  margin-bottom:9px;
+}
+
+h2 {
+  font-size:clamp(1.9rem,4vw,2.7rem);
+  line-height:1.2;
+  letter-spacing:-1px;
+  margin-bottom:12px;
+}
+
+.section-head p,
+.muted {
+  color:var(--muted);
+}
+
+.grid2 {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.grid3 {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card {
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:24px;
+  box-shadow:var(--shadow);
+}
+
+.card h3 {
+  font-size:1.12rem;
+  margin-bottom:10px;
+}
+
+.card p {
+  color:var(--muted);
+  font-size:.91rem;
+}
+
+.tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:17px;
+}
+
+.tag {
+  padding:6px 10px;
+  border-radius:8px;
+  background:var(--surface2);
+  color:var(--accent);
+  font-size:.75rem;
+  font-weight:700;
+}
+
+/* SKILLS */
+
+.skills-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:17px;
+}
+
+.skill-group h3 {
+  margin-bottom:12px;
+}
+
+.skill-list {
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+
+.skill {
+  background:var(--surface2);
+  padding:8px 12px;
+  border-radius:9px;
+  font-size:.82rem;
+  color:var(--text);
+  border:1px solid var(--border);
+}
+
+/* PROJECTS */
+
+.project {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+
+.project .type {
+  font-size:.75rem;
+  color:var(--accent);
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:12px;
+}
+
+.project .focus {
+  font-size:.82rem;
+  color:var(--muted);
+  margin-top:15px;
+}
+
+/* AUTOMATIC PROJECT SLIDESHOWS */
+
+.gallery {
+  position:relative;
+  width:100%;
+  aspect-ratio:16/10;
+  overflow:hidden;
+  border-radius:13px;
+  margin-top:20px;
+  background:var(--surface2);
+  border:1px solid var(--border);
+}
+
+.gallery a {
+  display:none;
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
+
+.gallery a.active {
+  display:block;
+  animation:slideFade .7s ease;
+}
+
+.gallery img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .4s;
+}
+
+.gallery a:hover img {
+  transform:scale(1.04);
+}
+
+@keyframes slideFade {
+  from {opacity:.3}
+  to {opacity:1}
+}
+
+.gallery-note {
+  font-size:.75rem;
+  color:var(--muted);
+  margin-top:10px;
+}
+
+.gallery-controls {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:10px;
+  gap:10px;
+}
+
+.gallery-controls button {
+  background:var(--surface2);
+  color:var(--text);
+  border:1px solid var(--border);
+  padding:6px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.gallery-count {
+  color:var(--muted);
+  font-size:.75rem;
+}
+
+/* EDUCATION */
+
+.timeline {
+  border-left:2px solid var(--border);
+  padding-left:22px;
+  margin-left:7px;
+}
+
+.timeline-item {
+  position:relative;
+  margin-bottom:25px;
+}
+
+.timeline-item:last-child {
+  margin-bottom:0;
+}
+
+.timeline-item:before {
+  content:"";
+  position:absolute;
+  left:-29px;
+  top:8px;
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  background:var(--accent);
+}
+
+.timeline-item h3 {
+  font-size:1.05rem;
+}
+
+.timeline-item p {
+  color:var(--muted);
+  font-size:.88rem;
+}
+
+/* CONTACT */
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:13px;
+}
+
+.contact-item {
+  background:var(--surface);
+  border:1px solid var(--border);
+  padding:17px;
+  border-radius:13px;
+}
+
+.contact-item small {
+  display:block;
+  color:var(--muted);
+  margin-bottom:4px;
+}
+
+.contact-item a {
+  font-weight:600;
+  overflow-wrap:anywhere;
+}
+
+.contact-item a:hover {
+  color:var(--accent);
+}
+
+/* FOOTER AND ANIMATIONS */
+
+footer {
+  padding:30px 0;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  font-size:.82rem;
+  text-align:center;
+}
+
+.reveal {
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity .6s,transform .6s;
+}
+
+.reveal.visible {
+  opacity:1;
+  transform:translateY(0);
+}
+
+.progress {
+  position:fixed;
+  top:0;
+  left:0;
+  height:3px;
+  background:var(--accent);
+  z-index:200;
+  width:0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px) {
+  .grid3 {
+    grid-template-columns:repeat(2,1fr);
   }
-  .nav-links.open{display:flex}
-  .hero{padding:55px 0}
-  .hero-grid{grid-template-columns:1fr;text-align:center}
-  .hero-meta,.actions{justify-content:center}
-  .portrait-wrap{grid-row:1;margin-bottom:10px}
-  .portrait{width:220px}
-  .grid2,.grid3,.skills-grid,.contact-grid{grid-template-columns:1fr}
-  section{padding:58px 0}
+
+  .float-one {
+    right:0;
+  }
+
+  .float-two {
+    left:0;
+  }
 }
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important}
+
+@media(max-width:850px) {
+  .hero-grid {
+    grid-template-columns:1fr .7fr;
+    gap:25px;
+  }
+
+  .nav-links {
+    gap:13px;
+  }
+}
+
+@media(max-width:650px) {
+  .menu-btn {
+    display:inline-block;
+  }
+
+  .nav-links {
+    display:none;
+    position:absolute;
+    top:72px;
+    left:0;
+    right:0;
+    background:var(--surface);
+    padding:20px 5%;
+    border-bottom:1px solid var(--border);
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .nav-links.open {
+    display:flex;
+  }
+
+  .hero {
+    padding:55px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero-meta,
+  .actions {
+    justify-content:center;
+  }
+
+  .portrait-wrap {
+    grid-row:1;
+    min-height:350px;
+    margin-bottom:10px;
+  }
+
+  .portrait {
+    width:220px;
+  }
+
+  .float-one {
+    right:0;
+    top:35px;
+  }
+
+  .float-two {
+    left:0;
+    bottom:30px;
+  }
+
+  .float-card {
+    padding:9px 11px;
+  }
+
+  .grid2,
+  .grid3,
+  .skills-grid,
+  .contact-grid {
+    grid-template-columns:1fr;
+  }
+
+  section {
+    padding:58px 0;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior:auto!important;
+    animation:none!important;
+    transition:none!important;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <div class="progress" id="progress"></div>
 
 <header>
   <div class="container nav">
+
     <a class="logo" href="#home">BASHIR<span>.</span></a>
 
     <nav class="nav-links" id="navLinks">
@@ -214,16 +744,28 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
       <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☀</button>
       <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
     </div>
+
   </div>
 </header>
 
 <main>
+
+<!-- HERO -->
+
 <section class="hero" id="home">
   <div class="container hero-grid">
+
     <div>
-      <div class="eyebrow"><span class="dot"></span> Open to employment opportunities</div>
+      <div class="eyebrow">
+        <span class="dot"></span>
+        Open to employment opportunities
+      </div>
+
       <h1>Muhammad Bashir <span class="gradient">Alizada</span></h1>
-      <div class="role"><span id="typedRole">Web Developer</span></div>
+
+      <div class="role">
+        <span id="typedRole">Web Developer</span>
+      </div>
 
       <p class="hero-description">
         Computer Science graduate specializing in web development,
@@ -239,21 +781,61 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
       </div>
 
       <div class="actions">
-        <a class="btn primary" href="CV.pdf" download>↓ Download My CV</a>
-        <a class="btn secondary" href="CV.pdf" target="_blank" rel="noopener">View CV ↗</a>
-        <a class="btn secondary" href="#projects">Explore Projects</a>
+        <a class="btn primary"
+           href="CV.pdf"
+           download="Muhammad-Bashir-Alizada-CV.pdf">
+          ↓ Download My CV
+        </a>
+
+        <a class="btn secondary"
+           href="CV.pdf"
+           target="_blank"
+           rel="noopener">
+          View CV ↗
+        </a>
+
+        <a class="btn secondary" href="#projects">
+          Explore Projects
+        </a>
       </div>
     </div>
 
+    <!-- PROFILE PHOTO WITH FLOATING CARDS -->
+
     <div class="portrait-wrap">
+
       <div class="portrait-frame"></div>
-      <img class="portrait" src="profile.png" alt="Muhammad Bashir Alizada">
+
+      <img class="portrait"
+           src="profile.png"
+           alt="Muhammad Bashir Alizada">
+
+      <div class="float-card float-one">
+        <span class="float-icon">💻</span>
+        <div>
+          <strong>Web Development</strong>
+          <small>Building digital solutions</small>
+        </div>
+      </div>
+
+      <div class="float-card float-two">
+        <span class="float-icon">🗄️</span>
+        <div>
+          <strong>Database & Data</strong>
+          <small>Managing information</small>
+        </div>
+      </div>
+
     </div>
+
   </div>
 </section>
 
+<!-- ABOUT -->
+
 <section id="about">
   <div class="container">
+
     <div class="section-head">
       <div class="kicker">About me</div>
       <h2>Professional Profile</h2>
@@ -261,6 +843,7 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
     </div>
 
     <div class="grid2">
+
       <div class="card">
         <h3>Who I Am</h3>
         <p>
@@ -282,6 +865,7 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
           I value continuous learning, problem-solving, teamwork,
           documentation, and delivering reliable work.
         </p>
+
         <div class="tags">
           <span class="tag">Web Development</span>
           <span class="tag">Databases</span>
@@ -289,12 +873,16 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
           <span class="tag">Data Reporting</span>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- SKILLS -->
+
 <section id="skills">
   <div class="container">
+
     <div class="section-head">
       <div class="kicker">Technical capabilities</div>
       <h2>Skills & Expertise</h2>
@@ -302,6 +890,7 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
     </div>
 
     <div class="skills-grid">
+
       <div class="card skill-group">
         <h3>🌐 Web Development</h3>
         <div class="skill-list">
@@ -357,134 +946,244 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
           <span class="skill">Quality Assurance</span>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- PROJECTS -->
+
 <section id="projects">
   <div class="container">
+
     <div class="section-head">
       <div class="kicker">Selected work & experience</div>
       <h2>Projects & <span class="gradient">Practical Experience</span></h2>
-      <p>Explore selected academic systems and business experience. Select any photo to view it in a larger size.</p>
+      <p>
+        Explore selected academic systems and business experience.
+        Each project has its own automatic photo slideshow.
+      </p>
     </div>
 
     <div class="grid3">
 
-      <!-- HRIMS PROJECT -->
+      <!-- HRIMS -->
+
       <article class="card project">
+
         <div class="type">Academic Project · Information System</div>
+
         <h3>Human Resource Information Management System (HRIMS)</h3>
+
         <p>
           Designed and developed an employee information system to
           organize personnel records, manage staff information, and
           generate reports for an organizational setting.
         </p>
+
         <div class="tags">
           <span class="tag">React</span>
           <span class="tag">Node.js</span>
           <span class="tag">MongoDB</span>
           <span class="tag">Database</span>
         </div>
-        <div class="focus">Focus: Employee records · Data organization · Reporting</div>
 
-        <div class="gallery">
-          <a href="HRIMS1.jpg" target="_blank"><img src="HRIMS1.jpg" alt="HRIMS screenshot 1" loading="lazy"></a>
-          <a href="HRIMS2.jpg" target="_blank"><img src="HRIMS2.jpg" alt="HRIMS screenshot 2" loading="lazy"></a>
-          <a href="HRIMS3.jpg" target="_blank"><img src="HRIMS3.jpg" alt="HRIMS screenshot 3" loading="lazy"></a>
-          <a href="HRIMS4.jpg" target="_blank"><img src="HRIMS4.jpg" alt="HRIMS screenshot 4" loading="lazy"></a>
-          <a href="HRIMS5.jpg" target="_blank"><img src="HRIMS5.jpg" alt="HRIMS screenshot 5" loading="lazy"></a>
-          <a href="HRIMS6.jpg" target="_blank"><img src="HRIMS6.jpg" alt="HRIMS screenshot 6" loading="lazy"></a>
+        <div class="focus">
+          Focus: Employee records · Data organization · Reporting
         </div>
-        <div class="gallery-note">HRIMS project gallery · 6 screenshots</div>
+
+        <div class="gallery" data-interval="3000">
+
+          <a class="active" href="HRIMS1.jpg" target="_blank" rel="noopener">
+            <img src="HRIMS1.jpg" alt="HRIMS screenshot 1">
+          </a>
+
+          <a href="HRIMS2.jpg" target="_blank" rel="noopener">
+            <img src="HRIMS2.jpg" alt="HRIMS screenshot 2" loading="lazy">
+          </a>
+
+          <a href="HRIMS3.jpg" target="_blank" rel="noopener">
+            <img src="HRIMS3.jpg" alt="HRIMS screenshot 3" loading="lazy">
+          </a>
+
+          <a href="HRIMS4.jpg" target="_blank" rel="noopener">
+            <img src="HRIMS4.jpg" alt="HRIMS screenshot 4" loading="lazy">
+          </a>
+
+          <a href="HRIMS5.jpg" target="_blank" rel="noopener">
+            <img src="HRIMS5.jpg" alt="HRIMS screenshot 5" loading="lazy">
+          </a>
+
+          <a href="HRIMS6.jpg" target="_blank" rel="noopener">
+            <img src="HRIMS6.jpg" alt="HRIMS screenshot 6" loading="lazy">
+          </a>
+
+        </div>
+
+        <div class="gallery-controls">
+          <button type="button" class="prev-slide" aria-label="Previous HRIMS photo">←</button>
+          <span class="gallery-count">1 / 6</span>
+          <button type="button" class="next-slide" aria-label="Next HRIMS photo">→</button>
+        </div>
+
+        <div class="gallery-note">HRIMS project gallery · 6 photos</div>
+
       </article>
 
       <!-- STATIONERY MANAGEMENT SYSTEM -->
+
       <article class="card project">
+
         <div class="type">Academic Project · Management System</div>
+
         <h3>Stationery Shop Management System</h3>
+
         <p>
           Developed a management-system project focused on organizing
           stationery inventory and sales information to support daily
           shop operations and record management.
         </p>
+
         <div class="tags">
           <span class="tag">Database</span>
           <span class="tag">System Analysis</span>
           <span class="tag">Inventory</span>
           <span class="tag">Management</span>
         </div>
-        <div class="focus">Focus: Inventory · Sales records · Information management</div>
 
-        <div class="gallery">
-          <a href="SSMS1.jpg" target="_blank"><img src="SSMS1.jpg" alt="Stationery system screenshot 1" loading="lazy"></a>
-          <a href="SSMS2.jpg" target="_blank"><img src="SSMS2.jpg" alt="Stationery system screenshot 2" loading="lazy"></a>
-          <a href="SSMS3.jpg" target="_blank"><img src="SSMS3.jpg" alt="Stationery system screenshot 3" loading="lazy"></a>
+        <div class="focus">
+          Focus: Inventory · Sales records · Information management
         </div>
-        <div class="gallery-note">Stationery Shop Management System gallery · 3 screenshots</div>
+
+        <div class="gallery" data-interval="3000">
+
+          <a class="active" href="SSMS1.jpg" target="_blank" rel="noopener">
+            <img src="SSMS1.jpg" alt="Stationery system screenshot 1">
+          </a>
+
+          <a href="SSMS2.jpg" target="_blank" rel="noopener">
+            <img src="SSMS2.jpg" alt="Stationery system screenshot 2" loading="lazy">
+          </a>
+
+          <a href="SSMS3.jpg" target="_blank" rel="noopener">
+            <img src="SSMS3.jpg" alt="Stationery system screenshot 3" loading="lazy">
+          </a>
+
+        </div>
+
+        <div class="gallery-controls">
+          <button type="button" class="prev-slide" aria-label="Previous stationery photo">←</button>
+          <span class="gallery-count">1 / 3</span>
+          <button type="button" class="next-slide" aria-label="Next stationery photo">→</button>
+        </div>
+
+        <div class="gallery-note">
+          Stationery Shop Management System gallery · 3 photos
+        </div>
+
       </article>
 
       <!-- HKN BUSINESS -->
+
       <article class="card project">
+
         <div class="type">Business Experience</div>
+
         <h3>HKN Business</h3>
+
         <p>
           Business-owner experience involving daily operations,
           product activities, coordination, and customer communication.
           This experience strengthened practical organizational
           and business-management skills.
         </p>
+
         <div class="tags">
           <span class="tag">Business Operations</span>
           <span class="tag">Coordination</span>
           <span class="tag">Communication</span>
           <span class="tag">Management</span>
         </div>
-        <div class="focus">Role: Business Owner</div>
 
-        <div class="gallery">
-          <a href="HKN1.jpg" target="_blank"><img src="HKN1.jpg" alt="HKN Business photo 1" loading="lazy"></a>
-          <a href="HKN2.jpg" target="_blank"><img src="HKN2.jpg" alt="HKN Business photo 2" loading="lazy"></a>
-          <a href="HKN3.jpg" target="_blank"><img src="HKN3.jpg" alt="HKN Business photo 3" loading="lazy"></a>
+        <div class="focus">
+          Role: Business Owner
         </div>
-        <div class="gallery-note">HKN Business gallery · 3 photos</div>
+
+        <div class="gallery" data-interval="3000">
+
+          <a class="active" href="HKN1.jpg" target="_blank" rel="noopener">
+            <img src="HKN1.jpg" alt="HKN Business photo 1">
+          </a>
+
+          <a href="HKN2.jpg" target="_blank" rel="noopener">
+            <img src="HKN2.jpg" alt="HKN Business photo 2" loading="lazy">
+          </a>
+
+          <a href="HKN3.jpg" target="_blank" rel="noopener">
+            <img src="HKN3.jpg" alt="HKN Business photo 3" loading="lazy">
+          </a>
+
+        </div>
+
+        <div class="gallery-controls">
+          <button type="button" class="prev-slide" aria-label="Previous HKN photo">←</button>
+          <span class="gallery-count">1 / 3</span>
+          <button type="button" class="next-slide" aria-label="Next HKN photo">→</button>
+        </div>
+
+        <div class="gallery-note">
+          HKN Business gallery · 3 photos
+        </div>
+
       </article>
 
     </div>
   </div>
 </section>
 
+<!-- EDUCATION -->
+
 <section id="education">
   <div class="container">
+
     <div class="section-head">
       <div class="kicker">Academic background</div>
       <h2>Education</h2>
     </div>
 
     <div class="card">
+
       <div class="timeline">
+
         <div class="timeline-item">
           <h3>Bachelor of Computer Science</h3>
           <p>Nangarhar University · Faculty of Computer Science</p>
           <p>Department of Information Systems · 2022–2026</p>
         </div>
+
         <div class="timeline-item">
           <h3>High School Diploma</h3>
           <p>Balish High School · Urgoon, Paktika, Afghanistan</p>
           <p>2008–2021</p>
         </div>
+
       </div>
     </div>
   </div>
 </section>
 
+<!-- LANGUAGES -->
+
 <section id="languages">
   <div class="container">
+
     <div class="section-head">
       <div class="kicker">Communication</div>
       <h2>Languages</h2>
     </div>
+
     <div class="grid2">
+
       <div class="card">
         <div class="skill-list">
           <span class="skill">Pashto</span>
@@ -492,8 +1191,12 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
           <span class="skill">English</span>
           <span class="skill">Urdu</span>
         </div>
-        <p style="margin-top:14px">Language proficiency can be discussed according to the requirements of the position.</p>
+
+        <p style="margin-top:14px">
+          Language proficiency can be discussed according to the requirements of the position.
+        </p>
       </div>
+
       <div class="card">
         <h3>Professional Goal</h3>
         <p>
@@ -502,44 +1205,75 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
           I can contribute, learn, and grow professionally.
         </p>
       </div>
+
     </div>
   </div>
 </section>
+
+<!-- CONTACT -->
 
 <section id="contact">
   <div class="container">
+
     <div class="section-head">
       <div class="kicker">Get in touch</div>
       <h2>Contact Me</h2>
-      <p>I welcome professional opportunities, interviews, and discussions related to IT and information systems positions.</p>
+      <p>
+        I welcome professional opportunities, interviews, and discussions
+        related to IT and information systems positions.
+      </p>
     </div>
 
     <div class="contact-grid">
+
       <div class="contact-item">
         <small>Email</small>
-        <a href="mailto:mb.alizada1@gmail.com">mb.alizada1@gmail.com</a>
+        <a href="mailto:mb.alizada1@gmail.com">
+          mb.alizada1@gmail.com
+        </a>
       </div>
+
       <div class="contact-item">
         <small>Phone / WhatsApp</small>
-        <a href="https://wa.me/93776380570" target="_blank">+93 776 380 570</a>
+        <a href="https://wa.me/93776380570" target="_blank" rel="noopener">
+          +93 776 380 570
+        </a>
       </div>
+
       <div class="contact-item">
         <small>GitHub</small>
-        <a href="https://github.com/mdbashiralizada" target="_blank">github.com/mdbashiralizada</a>
+        <a href="https://github.com/mdbashiralizada" target="_blank" rel="noopener">
+          github.com/mdbashiralizada
+        </a>
       </div>
+
       <div class="contact-item">
         <small>Telegram</small>
-        <a href="https://t.me/bashirkhanalizada" target="_blank">@bashirkhanalizada</a>
+        <a href="https://t.me/bashirkhanalizada" target="_blank" rel="noopener">
+          @bashirkhanalizada
+        </a>
       </div>
+
     </div>
 
     <div style="margin-top:25px">
-      <a class="btn primary" href="CV.pdf" download>↓ Download My CV</a>
-      <a class="btn secondary" href="mailto:mb.alizada1@gmail.com">Send an Email</a>
+      <a class="btn primary"
+         href="CV.pdf"
+         download="Muhammad-Bashir-Alizada-CV.pdf">
+        ↓ Download My CV
+      </a>
+
+      <a class="btn secondary" href="mailto:mb.alizada1@gmail.com">
+        Send an Email
+      </a>
     </div>
+
   </div>
 </section>
+
 </main>
+
+<!-- FOOTER -->
 
 <footer>
   <div class="container">
@@ -549,32 +1283,55 @@ footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font
 </footer>
 
 <script>
+
+/* THEME SWITCH */
+
 const themeBtn = document.getElementById("themeBtn");
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
 
 const savedTheme = localStorage.getItem("portfolio-theme");
-if(savedTheme === "light"){
+
+if(savedTheme === "light") {
   document.body.classList.add("light");
   themeBtn.textContent = "☾";
 }
 
 themeBtn.addEventListener("click",()=>{
   document.body.classList.toggle("light");
+
   const light = document.body.classList.contains("light");
+
   themeBtn.textContent = light ? "☾" : "☀";
-  localStorage.setItem("portfolio-theme",light ? "light" : "dark");
+
+  localStorage.setItem(
+    "portfolio-theme",
+    light ? "light" : "dark"
+  );
 });
+
+
+/* MOBILE MENU */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 
 menuBtn.addEventListener("click",()=>{
   navLinks.classList.toggle("open");
 });
 
 document.querySelectorAll(".nav-links a").forEach(link=>{
-  link.addEventListener("click",()=>navLinks.classList.remove("open"));
+  link.addEventListener("click",()=>{
+    navLinks.classList.remove("open");
+  });
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+
+/* CURRENT YEAR */
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+
+/* TYPING ANIMATION */
 
 const roles = [
   "Web Developer",
@@ -586,51 +1343,165 @@ const roles = [
 let roleIndex = 0;
 let charIndex = 0;
 let deleting = false;
+
 const typedRole = document.getElementById("typedRole");
 
-function typeRole(){
-  const current = roles[roleIndex];
-  typedRole.textContent = current.substring(0,charIndex);
+function typeRole() {
 
-  if(!deleting){
+  const current = roles[roleIndex];
+
+  typedRole.textContent =
+    current.substring(0,charIndex);
+
+  if(!deleting) {
+
     charIndex++;
-    if(charIndex > current.length){
+
+    if(charIndex > current.length) {
       deleting = true;
       setTimeout(typeRole,1400);
       return;
     }
-  }else{
+
+  } else {
+
     charIndex--;
-    if(charIndex < 0){
+
+    if(charIndex < 0) {
       deleting = false;
       charIndex = 0;
       roleIndex = (roleIndex + 1) % roles.length;
     }
+
   }
+
   setTimeout(typeRole,deleting ? 45 : 85);
 }
+
 typeRole();
 
+
+/* SCROLL PROGRESS */
+
 const progress = document.getElementById("progress");
+
 window.addEventListener("scroll",()=>{
-  const total = document.documentElement.scrollHeight - window.innerHeight;
-  const percent = total > 0 ? (window.scrollY / total) * 100 : 0;
+
+  const total =
+    document.documentElement.scrollHeight - window.innerHeight;
+
+  const percent =
+    total > 0 ? (window.scrollY / total) * 100 : 0;
+
   progress.style.width = percent + "%";
+
 });
 
+
+/* REVEAL ANIMATIONS */
+
 const observer = new IntersectionObserver(entries=>{
+
   entries.forEach(entry=>{
-    if(entry.isIntersecting){
+
+    if(entry.isIntersecting) {
       entry.target.classList.add("visible");
       observer.unobserve(entry.target);
     }
+
   });
+
 },{threshold:.12});
 
 document.querySelectorAll(".card,.section-head").forEach(el=>{
+
   el.classList.add("reveal");
   observer.observe(el);
+
 });
+
+
+/* INDEPENDENT AUTOMATIC PROJECT SLIDESHOWS */
+
+document.querySelectorAll(".gallery").forEach(gallery=>{
+
+  const slides = Array.from(gallery.querySelectorAll("a"));
+
+  const projectCard = gallery.closest(".project");
+
+  const counter = projectCard.querySelector(".gallery-count");
+
+  const previousButton = projectCard.querySelector(".prev-slide");
+
+  const nextButton = projectCard.querySelector(".next-slide");
+
+  let current = 0;
+
+  let interval;
+
+  function showSlide(index) {
+
+    slides[current].classList.remove("active");
+
+    current = (index + slides.length) % slides.length;
+
+    slides[current].classList.add("active");
+
+    counter.textContent =
+      (current + 1) + " / " + slides.length;
+
+  }
+
+  function nextSlide() {
+    showSlide(current + 1);
+  }
+
+  function previousSlide() {
+    showSlide(current - 1);
+  }
+
+  function startSlideshow() {
+
+    clearInterval(interval);
+
+    if(slides.length > 1) {
+      interval = setInterval(nextSlide,3000);
+    }
+
+  }
+
+  nextButton.addEventListener("click",()=>{
+    nextSlide();
+    startSlideshow();
+  });
+
+  previousButton.addEventListener("click",()=>{
+    previousSlide();
+    startSlideshow();
+  });
+
+  gallery.addEventListener("mouseenter",()=>{
+    clearInterval(interval);
+  });
+
+  gallery.addEventListener("mouseleave",()=>{
+    startSlideshow();
+  });
+
+  // Pause while the visitor is touching the slideshow.
+  gallery.addEventListener("touchstart",()=>{
+    clearInterval(interval);
+  },{passive:true});
+
+  gallery.addEventListener("touchend",()=>{
+    startSlideshow();
+  },{passive:true});
+
+  startSlideshow();
+
+});
+
 </script>
+
 </body>
 </html>
